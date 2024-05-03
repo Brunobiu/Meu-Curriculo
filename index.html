@@ -3,414 +3,222 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Meu portifolio</title>
-	<link rel="icon" href="img/LogoBaixo.png" type="image/x-icon">
+	<link rel="icon" href="img/header.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="styles/styles.css">
 
-	<!-- Inicio Google FONTES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- FIM Google FONTES -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://unpkg.com/scrollreveal"></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-	<link rel="stylesheet" type="text/css" href="index.css">
-
+	<title>Portfólio Bruno</title>
 </head>
 <body>
-	<section class="banner">
-		<header>
-			<div class="interface">
-				<div class="logo">
-					<a href="index.html"><span>Meu</span>Portfólio</a>
-				</div><!-- Logo  -->
-				
-				<nav class="menu-desktop">
-					<ul>
-						<li><a href="#espacialidade">Especialidades</a></li>
-						<li><a href="#sobre">Sobre</a></li>
-					</ul>
-				</nav>
-				
-			</div><!-- Final Interface  -->
-			
-		</header>
-	
-	<main>
-	<section class="topo-do-site">
-			<div class="interface">
-				<div class="flex">
-				
-					<div class="txt-topo-site" id="topo-do-site">
-						<h1>Olá sou Bruno</h1>
-						<h4>Desenvolvedor <span id="textM"></span></h4>
 
-						<div class="btn-contato">
-							<a href="#" id="btnOpenPDF">
-								<button><i class="bi bi-filetype-pdf"></i>  Download CV</button>
-							</a>
-						</div>
-						<!-- btn-contato -->
-					</div>
-					<!-- Final txt-topo-site -->
-					
-					
-					
-					<div class="img-topo-site">
-						<img src="img/Minha-imagem.png" alt="">
-					</div><!-- Final img-topo-site  -->
-						
-					<div class="dayNight">
-						<ion-icon name="moon-outline"></ion-icon>
-						<ion-icon name="sunny-outline"></ion-icon>
-					</div>
-				</div><!-- Final flex  -->
-			</div><!-- Final interface  -->
-			<a href="#" class="scroll-to-top">
-				<img src="img/icons8-up-arrow-50.png" alt="Seta para cima">
-			</a>
-			
+	<header >
+		<nav id="navbar">
+			<i class="fa-solid fa-address-card" id="nav_logo"> Bruno</i>
 
+			<ul id="nav_list">
+				<li class="nav-item active">
+					<a href="#home">Início</a>
+				</li>
+				<li class="nav-item">
+					<a href="#sobre">Sobre mim</a>
+				</li>
+				<li class="nav-item">
+					<a href="#projetos">Projetos</a>
+				</li>
+				<li class="nav-item">
+					<a href="#skills">Minhas Skills</a>
+				</li>
+			</ul>
 
+			<button id="mobille-btn"> 
+				<i class="fa-solid fa-bars"></i>
+			</button>
+			
+		</nav>
 
-			
-			
-		</section><!-- Final topo-do-site  -->
+		<div id="mobile_menu">
+			<ul id="mobile_nav_list">
+				<li class="nav-item">
+					<a href="#home">Início</a>
+				</li>
+				<li class="nav-item">
+					<a href="#sobre">Sobre mim</a>
+				</li>
+				<li class="nav-item">
+					<a href="#experiencia">Experiencias</a>
+				</li>
+				<li class="nav-item">
+					<a href="#projetos">Projetos</a>
+				</li>
+				<li class="nav-item">
+					<a href="#skills">Minhas Skills</a>
+				</li>
+			</ul>
+			<button class="btn-default">Converse comigo</button>
+		</div>
 		
-	<section class="espacialidade" id="espacialidade">
-	    <div class="interface">
-	        <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span> </h2>
-	        <div class="flex">
-	            <div class="especial-box">
-				    <img src="img/iconejavavermelho.png" width="100" height="100" alt="">
-				    <h3>JAVA</h3>
-				    <p><span>-</span>Java versão 11</p>
-					<p><span>-</span>Ajax</p>
-					<p><span>-</span>Servlets</p>
-					<p><span>-</span>Correção de Bugs</p>
-				    <p><span>-</span>Orientação a Objetos</p>
-				    <p><span>-</span>Manipulação de Dados</p>
-				    <p><span>-</span>Cadastro de Usuários</p>
-				    <p><span>-</span>Upload de Imagem do Usuário</p>
-				    <p><span>-</span>Calendário de Nascimento</p>
-				    <p><span>-</span>Impressão de PDF e Excel</p>
-				    
-				    <p><span>-</span>Interação com PostgreSQL</p>
-				</div>
+	</header >
 
-	             
-	             <div class="especial-box">
-				    <img src="img/icons8-spring-boot-240.png" width="100" height="100" alt="">
-				    <h3>SPRING BOOT</h3>
-				    <p><span>-</span>Projeto Spring Boot</p>
-				    <p><span>-</span>Banco de Dados</p>
-				    <p><span>-</span>Entidades</p>
-					<p><span>-</span>Spring Security e JWT</p>
-				    <p><span>-</span>Estudando atualmente...</p>
-				</div>
+	<main id="content" class="header">
+		<section id="home">
+			<div class="shape"></div>
+				<div id="cta">
+					<h1 class="title">Bruno <span>Henrique</span></h1>
 
-	             
-	             <div class="especial-box">
-				    <img src="img/icons8-angular-240.png" width="100" height="100" alt="">
-				    <h3>ANGULAR</h3>
-					<p><span>-</span>Angular versão 16</p>
-				    <p><span>-</span>Estudando atualmente...</p>
-				</div>
+					<p class="description"> Desenvolvedor Full-Strack</p>
 
-	             
-	        </div>
-	    </div>
-	</section>
-
-	<section class="sobre" id="sobre">
-		<div class="interface">
-			<div class="flex">
-				<div class="img-sobre" >
-					<img src="img/ECRTE2697.JPG" alt="" width="400" height="550" style="border-radius: 15px;">
-
-					
-				</div>
-				
-				<div class="txt-sobre">
-					<h2>MUITO PRAZER, <span>SOU BRUNO HENRIQUE.</span></h2>
-					<p>Olá, prazer em conhecê-lo! Sou o Bruno Henrique, 29 anos e, recentemente embarquei 
-					em uma nova jornada na área de análise e desenvolvimento de sistemas, estou gostando bastante. Fora do trabalho, 
-					sou apaixonado por vôlei, frequento a academia regularmente e adoro sair com amigos para 
-					momentos de descontração. Sou uma pessoa independente, focada e determinada, tanto em minha 
-					vida pessoal quanto profissional.</p>
-					<p>Atualmente, estou dando um grande passo em minha carreira, me profissionalizando na área de tecnologia. 
-					Estou cursando graduação na Faculdade VINCIT, localizada em Maringá PR. Além disso, estou constantemente 
-					buscando aprimorar minhas habilidades por meio de cursos complementares como HTML, CSS, Bootstrap, Java, 
-					JavaScript, Spring Boot e banco de dados PostgreSQL e Angular. 
-					Estou entusiasmado com essa transição e ansioso para aplicar todo esse conhecimento em projetos desafiadores e inovadores.</p>
-					
-					<div class="btn-social">
-					    <a href="https://www.youtube.com/channel/UCF4Cpn5zekxAUItuMy6UWQw" onclick="openInNewTab(event, 'https://www.youtube.com/channel/UCF4Cpn5zekxAUItuMy6UWQw')"><button><i class="bi bi-youtube menu-link"></i></button></a>
-					    <a href="https://www.linkedin.com/in/brunobiuu" onclick="openInNewTab(event, 'https://www.linkedin.com/in/brunobiuu')"><button><i class="bi bi-linkedin menu-link"></i></button></a>
-					    <a href="https://github.com/Brunobiu" onclick="openInNewTab(event, 'https://github.com/Brunobiu')"><button><i class="bi bi-github menu-link"></i></button></a>
+					<div id="cta_buttons">
+						<a href="pdf/Curriculo-Notion-Completo.pdf" class="btn-default">Currículo</a>
 					</div>
-					
-				</div>
-			</div>			
-		</div>
-	</section>
+					<div class="social-media-buttons">
+						<a href="http://wa.me/5562994757240">
+							<i class="fa-brands fa-whatsapp"></i>
+						</a>
 
-	<section>
-		<h2 class="titulo" style="margin-top: 20px; margin-bottom: 60px;">MEUS <span>PROJETOS</span> </h2>
+						<a href="https://www.instagram.com/brunobiuu_?igsh=ZG9zZ3NoODN4eTA=">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
 
-		<div class="containe">
-			<div class="card">
-				<div class="imgBx">
-					<img src="img/iconejavavermelho.png">
-				</div>
-				<div class="contentBx">
-					<h2>Formação Java Web</h2>
-					<div class="size">
-						<h3>Curso Back-end Concluído</h3>
+						<a href="https://www.linkedin.com/in/brunobiuu">
+							<i class="fa-brands fa-linkedin"></i>
+						</a>
+
 					</div>
-					<a href="https://youtu.be/gCsluc5E9bA" target="_blank">Youtube</a>
-					<a href="https://github.com/Brunobiu/Forma-o-Java-Web-Full-Stack" target="_blank">Repositório</a>
 				</div>
+
+			<div id="banner">
+				<img src="img/Design1.png" alt="">
 			</div>
 
-			<div class="card">
-				<div class="imgBx">
-					<img src="img/icons8-spring-boot-240.png">
-				</div>
-				<div class="contentBx">
-					<h2>Spring Boot API Rest e Angular 16</h2>
-					<div class="size">
-						<h3>Curso (Back-end) Projeto em andamento</h3>
-					</div>
-					<a href="https://github.com/Brunobiu/projeto-shopee" target="_blank" >Repositoório</a>
-				</div>
-			</div>
+		</section>
 
-			<div class="card">
-				<div class="imgBx">
-					<img src="img/projetosPessoais.png">
-				</div>
-				<div class="contentBx">
-					<h2>Projetos Pessoais</h2>
-					<div class="size">
-						<h3>Aqui projetos que eu estou desenvolvendo baseado nos meus aprendizados.</h3>
-					</div>
-					<a href="https://projetos-no-portfolio.vercel.app/">Ver Projetos</a>
-				</div>
-			</div>
-		</div>
-	<section class="formulario" id="formulario">
-        <div class="interface">
-            <div>
-                <h2 class="titulo">FALA <span>COMIGO</span> </h2>
-                
-                <form action="https://formspree.io/f/xyyrnvop" method="post">
-                    <input type="text" name="nome" id="nome" placeholder="Nome:" required> 
-                    
-                    <input type="email" name="email" id="email" placeholder="E-mail:" required>
-                    
-                    <input type="text" name="celular" id="celular" placeholder="Telefone:">
-                    
-                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem..."></textarea>
-                    
-                    <div class="btn-enviar">
-                        <input type="submit" value="Enviar">
-                    </div>		
-                </form>
+		<div class="widget">
+            <div class="widget-item">
+                <h2 style="color: #5e5ba9;">2</h2>
+                <p>Projetos Pessoais</p>
+            </div>
+            <div class="widget-item">
+                <h2 style="color: #5e5ba9;">4</h2>
+                <p>Projetos curso</p>
+            </div>
+            <div class="widget-item">
+                <h2 style="color: #5e5ba9;">2</h2>
+                <p>Desenvolvendo</p>
             </div>
         </div>
-    </section>
-	</section>
+
+		<section id="home">
+			<div class="overlay"></div>
+
+			<div id="banner2">
+				<img src="img/Minha-imagem.png" alt="">
+			</div>
+
+			<div id="cta2">
+				<h1 class="title2">Sobre <span>mim</span></h1>
+				<p class="description"> • Estudante em Análise e Desenvolvimento de Sistemas.</p>
+				<p class="description"> • 7 meses de experiência</p>
+				<p class="description"> • Habilidades: Java, Spring, html, CSS</p>
+				<p class="description"> • Interesses: Desenvolvimento de Software</p>
+				
+			</div>
+
+		
+		</section>
+
+		<!--portfolio section design-->
+		<section class="portfolio" id="portfolio">
+			<div class="main-text">
+				<h1 class="titulo2">Ultimos Projects</h1>
+			</div>
 	
+			<div class="portfolio-content">
+	
+				<div class="row">
+					<img src="img/projeto-java-web.png">
+					<div class="layer">
+						<h5>Formação Java Web</h5>
+						<p style="font-weight: bold;">CURSO BACK-END CONCLUÍDO.</p>
+						<p>Servlets, Correção de Bugs,Orientação a Objetos, Manipulação de Dados, Cadastro de Usuários, Upload de Imagem do Usuário, Calendário de Nascimento, Impressão de PDF e Excel, Interação com PostgreSQL</p>
+					</div>
+				</div>
+	
+				<div class="row">
+					<img src="img/projeto-cardapio.png">
+					<div class="layer">
+						<h5>Cardápio Digital</h5>
+						<p>Pedido online simplificado, Integração com a API do WhatsApp, Gerenciamento eficiente de pedidos, Personalização flexível, Feedback instantâneo</p>
+					</div>
+				</div>
+	
+				<div class="row">
+					<img src="img/projeto-angular.png">
+					<div class="layer">
+						<h5 >Spring Boot API Rest e Angular 16</h5>
+						<p style="font-weight: bold;">CURSO (BACK-END) PROJETO EM ANDAMENTO</p>
+						<p>Modelar diagramas, Spring Data JPA, REST API com Spring Boot, Security e JWT, SQL, API de Nota Fiscal Eletrônica, PIX, boleto e cartão de crédito, transporte, AWS Cloud</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<img src="img/projeto-lojinha.png">
+					<div class="layer">
+						<h5>Lojinha Virtual</h5>
+						<p style="font-weight: bold;">Front-end e Back-end completo</p>
+						<p>API PIX, boleto, cartão, nota fiscal, e-mail e transportadora, Arquitetura de segurança, Documentação de API, Hospedagem em Cloud</p>
+					</div>
+				</div>
+
+				
+	
+	
+			</div>
+		</section>
+
+			<section id="menu">
+				<h3 class="section-subtitulo">O que estou estudando</h3>
+				<h2 class="section-titulo" style="color: #e9a209;">Minhas Skills</h2>
+			
+
+			<div id="dishes">
+				<div class="dish">
+					<img src="img/iconejavavermelho.png" class="dish-image" alt=""style="max-width: 180px; height: auto;">
+					<h3>Java 11</h3>
+				</div>
+
+				<div class="dish">
+					<img src="img/icons8-spring-boot-240.png" class="dish-image" alt="" style="max-width: 180px; height: auto;">
+					<h3>Spring Boot</h3>
+				</div>
+
+				<div class="dish">
+					<img src="img/icons8-angular-240.png" class="dish-image" alt="" style="max-width: 180px; height: auto;">
+					<h3>Angular</h3>
+				</div>
+
+				<div class="dish">
+					<img src="img/Postgresql_elephant.svg.png" class="dish-heart" alt="" style="max-width: 180px; height: auto;">
+					<h3>PostgreSQL</h3>
+				</div>
+			</div>
+
+		</section>
+
+
+		<footer>
+			<div id="copyright">
+				<span>Copyright © 2024 de Bruno Henrique. Todos os direitos reservados.</span>
+			</div>
+		</footer>
+		
+
+
+
 	</main>
 	
-	
-	<footer>
-		<div class="interface">
-			<div class="line-footer">
-				<div class="flex">
-					<div class="btn-social" style="margin-top: 10px; margin-bottom: 10px;">
-					    <a href="https://www.youtube.com/channel/UCF4Cpn5zekxAUItuMy6UWQw" onclick="openInNewTab(event, 'https://www.youtube.com/channel/UCF4Cpn5zekxAUItuMy6UWQw')"><button><i class="bi bi-youtube"></i></button></a>
-					    <a href="https://www.linkedin.com/in/brunobiuu" onclick="openInNewTab(event, 'https://www.linkedin.com/in/brunobiuu')"><button><i class="bi bi-linkedin"></i></button></a>
-					    <a href="https://github.com/Brunobiu" onclick="openInNewTab(event, 'https://github.com/Brunobiu')"><button><i class="bi bi-github"></i></button></a>
-					</div>
-					</div>
-				<div class="line-footer borda">
-					<p><i class="bi bi-whatsapp"></i> <a>(62) 9 9475-7240</a> </p>
-					<p><i class="bi bi-envelope-check"></i> <a href="mailto:Brunobiuu@proton.me">brunobiuu@proton.me</a> </p>
-					<p><i class="bi bi-file-earmark-check-fill"></i>   <a>Portfólio atualizado em 18/04/2024</a></p>
-			</div>
-			</div>
-		</div>	
-		
-	</footer>
-	
-	<script>
-
-    function chamarEspecialidades() {
-        document.querySelector('.espacialidade').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-    }
-
-    function chamarSobre() {
-        document.querySelector('.sobre').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-    }
-
-    function chamarProjetos() {
-		document.querySelector('#containe').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-	}
-	
-	
-</script>
-
-	<script>
-    window.onload = function() {
-        var links = document.querySelectorAll('.scroll-link');
-
-        links.forEach(function(link) {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                var targetId = this.getAttribute('href');
-                var targetElement = document.querySelector(targetId);
-
-                var scrollOffset = targetElement.getBoundingClientRect().top + window.pageYOffset;
-                var offset = 100; // You can adjust the offset here
-
-                window.scrollTo({
-                    top: scrollOffset - offset,
-                    behavior: 'smooth'
-                });
-            });
-        });
-    }
-</script>
-
-	<script>
-        // Função para formatar automaticamente o telefone com parênteses
-        function formatarTelefone(input) {
-            // Remove todos os caracteres não numéricos do número de telefone
-            let valor = input.value.replace(/\D/g, '');
-            // Adiciona os parênteses ao redor do DDD
-            valor = valor.replace(/^(\d{2})(\d)/g, '($1) $2');
-            // Atualiza o valor do input
-            input.value = valor;
-        }
-
-        // Seletor para o campo de telefone
-        const campoTelefone = document.getElementById('celular');
-
-        // Adiciona um ouvinte de evento de entrada para chamar a função de formatação de telefone
-        campoTelefone.addEventListener('input', function() {
-            formatarTelefone(campoTelefone);
-        });
- </script>
-    
-    <script>
-        function validarEmail(input) {
-            // Expressão regular para validar o e-mail
-            const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            // Verifica se o valor do input corresponde ao padrão de e-mail
-            if (!regexEmail.test(input.value)) {
-                input.setCustomValidity('Digite um endereço de e-mail válido.');
-            } else {
-                input.setCustomValidity('');
-            }
-        }
-</script>
-
-	<script>
-        document.getElementById("btnOpenPDF").addEventListener("click", function(event) {
-            event.preventDefault(); // Impede o comportamento padrão do link
-
-            // URL do PDF local que você quer abrir
-            var pdfUrl = "pdf/Curriculo-Notion-Completo.pdf";
-
-            // Abrir o PDF em uma nova aba do navegador
-            window.open(pdfUrl, "_blank");
-        });
-</script>
-	
-	<script>
-	    function openInNewTab(event, url) {
-	        event.preventDefault();
-	        var win = window.open(url, '_blank');
-	        win.focus();
-	    }
-</script>
-	
-	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-	
-
-	<script>
-        let typed    = new Typed('#textM', {
-            strings: ['Java 11', 'Spring Boot', 'Angular 16', 'HTML', 'CSS'],
-            loop : true,
-            typeSpeed: 50,
-            backSpeed : 50,
-            backDelay : 1000,
-          });
-
-
-        let banner = document.querySelector('.banner');
-        let dayNight = document.querySelector('.dayNight');
-        dayNight.onclick = function(){
-            banner.classList.toggle('nigth')
-        }
-    </script>
-
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <!-- Initialize Swiper -->
-  <script type="module">
-    var swiper = new Swiper('.swiper', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 100,
-        modifier: 2,
-        slideShadows: true,
-      },
-      loop: true,
-    
-    });
-  </script>
-
-
-<script>
-	document.addEventListener('DOMContentLoaded', function() {
-		var scrollToTopButton = document.querySelector('.scroll-to-top');
-
-		// Mostrar o botão de rolar para o topo quando a página for rolada além de um certo ponto
-		window.addEventListener('scroll', function() {
-			if (window.scrollY > 300) {
-				scrollToTopButton.style.display = 'block';
-			} else {
-				scrollToTopButton.style.display = 'none';
-			}
-		});
-
-		// Rolar suavemente para o topo quando o botão for clicado
-		scrollToTopButton.addEventListener('click', function(e) {
-			e.preventDefault();
-			window.scrollTo({
-				top: 0,
-				behavior: 'smooth'
-			});
-		});
-	});
-</script>
-
-
-
- 
-
-
-	
-
+	<script src="javascript/script.js"></script>
 </body>
 </html>

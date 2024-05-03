@@ -1,0 +1,151 @@
+#home {
+    display: flex;
+    min-height: calc(100vh - 91px);
+    position: relative;
+}
+
+#cta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 15%;
+}
+
+.main-text .titulo2 {
+    font-size: 2rem;
+    color: #1d1d1d;
+}
+
+#cta .title span {
+    color: #e9a209;
+}
+
+#cta .description {
+    font-size: 1.2rem;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+#banner {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
+}
+
+#banner img {
+    height: 100%;
+    width: fit-content;
+}
+
+#banner2 {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;
+}
+
+#banner2 img {
+    max-width: 100%; /* Ajusta a largura máxima da imagem para ocupar no máximo 100% da largura do contêiner pai */
+    max-height: 200px; /* Define uma altura máxima para a imagem */
+    width: auto; /* Permite que a largura da imagem se ajuste automaticamente de acordo com a altura definida */
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+    max-width: 250%; /* Aumenta a largura máxima em 50% */
+    max-height: 350px;
+}
+
+#cta .title2 {
+    font-size: 2rem;
+    color: #1d1d1d;
+}
+
+#cta .title2 span {
+    color: #e9a209;
+}
+
+#cta2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 15%;
+}
+
+#cta2 .title2 {
+    font-size: 2rem;
+    color: #1d1d1d;
+}
+
+#cta2 .title2 span {
+    color: #e9a209;
+}
+
+@media screen and (max-width: 1170px){
+    #home{
+        height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner,
+    #banner img {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    #banner2 img {
+        display: none;
+    }
+
+    #cta2 {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #banner2 {
+        width: 0%;
+    }
+
+    #cta2 .title2 {
+        font-size: 1.8rem;
+        color: #1d1d1d;
+    }
+
+    #cta .title {
+        font-size: 2.5rem;
+    }
+    
+    #cta .title {
+        font-size: 3rem;
+    }
+
+    
+    
+}
+
+.overlay {
+    position: absolute; /* Define a posição absoluta para que o overlay cubra toda a seção */
+    bottom: 55px;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.1); /* Cor de fundo semitransparente */
+    z-index: -1; /* Coloca o overlay atrás do conteúdo da seção */
+}
