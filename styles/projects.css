@@ -285,4 +285,25 @@
         transition: .5s;
         color: #e4ab32;
     }
+
+
+    @media (max-width: 420px) {
+        
+    
+        .row {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centralizar horizontalmente */
+            max-width: 800px; /* Definindo a largura máxima do elemento */
+            margin-left: auto; /* Margem à esquerda automática */
+            margin-right: auto; /* Margem à direita automática */
+            user-select: none; /* Impede a seleção de texto com o mouse */
+            font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+        }
+    }
+    
+    
 }

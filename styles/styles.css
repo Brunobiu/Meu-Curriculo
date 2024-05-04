@@ -77,3 +77,26 @@ section {
 .section-titulo {
     font-size: 2.1875rem;
 }
+
+.scrollup {
+    display: none;
+    position: fixed;
+    bottom: 20px; /* Ajuste conforme necessário */
+    right: 20px; /* Ajuste conforme necessário */
+    width: 40px; /* Ajuste conforme necessário */
+    height: 40px; /* Ajuste conforme necessário */
+    background-color: #ccc; /* Cor zinza */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.scrollup a {
+    color: #000; /* Cor do ícone */
+    text-decoration: none;
+}
+
+.scrollup:hover {
+    background-color: #999; /* Cor zinza escuro quando hover */
+}
