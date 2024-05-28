@@ -16,7 +16,7 @@
 
 	<header >
 		<nav id="navbar">
-			<i class="fa-solid fa-address-card" id="nav_logo"> Bruno</i>
+			<i class="fa-solid fa-address-card" id="nav_logo"> portfolio</i>
 
 			<ul id="nav_list">
 				<li class="nav-item active">
@@ -68,8 +68,17 @@
 					<p class="description"> Desenvolvedor Full-Strack</p>
 
 					<div id="cta_buttons">
-						<a href="pdf/Curriculo-Notion-Completo.pdf" class="btn-default">Currículo</a>
+						<a href="pdf/Curriculo-Notion-Completo.pdf" class="button" style="color: #ffffff;" target="_blank">Currículo</a>
 					</div>
+
+					<div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <button type="button" class="btn-play" data-toggle="modal"
+                            data-src="video/VideoApresentacao.mp4" data-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">VÍDEO APRESENTAÇÃO</h5>
+                    </div>
+					
 					<div class="social-media-buttons">
 						<a href="http://wa.me/5562994757240" target="_blank">
 							<i class="fa-brands fa-whatsapp"></i>
@@ -118,7 +127,7 @@
 				<h1 class="title2">Sobre <span>mim</span></h1>
 				<p class="description"> • Estudante em Análise e Desenvolvimento de Sistemas.</p>
 				<p class="description"> • Quase 1 ano de estudos.</p>
-				<p class="description"> • Habilidades: Java, Spring, html, CSS.</p>
+				<p class="description"> • Estudando: Java, Spring, html, CSS, Angular 16.</p>
 				<p class="description"> • Interesses: Desenvolvimento de Software.</p>
 				
 			</div>
@@ -133,31 +142,26 @@
 			</div>
 	
 			<div class="portfolio-content">
-	
-				<div class="row">
-					<img src="img/projeto-java-web.png">
-					<div class="layer">
-						<h5>Formação Java Web</h5>
-						<p style="font-weight: bold;">JAVA,Java EE, PostgreSQL, JSON, HTML, CSS</p>
-						<p>Servlets, Correção de Bugs,Orientação a Objetos, Manipulação de Dados, 
-							Cadastro de Usuários, Upload de Imagem do Usuário, Calendário de Nascimento, Impressão de PDF e Excel.</p>
-							<a href="https://youtu.be/gCsluc5E9bA" class="botao-youtube" target="_blank">YouTube</a>
-							<a href="https://github.com/Brunobiu/Forma-o-Java-Web-Full-Stack" class="botao-repositori" target="_blank">Repositório</a>
 
-					</div>
-				</div>
-	
 				<div class="row">
-					<img src="img/projeto-cardapio.png">
+					<div class="dish2">
+						<h3>Pessoalz</h3>
+					</div>
+					<img src="img/plataforma de streaming.png">
 					<div class="layer">
-						<h5>Cardápio Digital</h5>
-						<p style="font-weight: bold;">Html, CSS, JavaScript</p>
-						<p>Pedido online simplificado, Integração com a API do WhatsApp, Gerenciamento eficiente de pedidos, Personalização flexível, Feedback instantâneo</p>
-						<a href="https://delivery-master.vercel.app/" class="botao-site" target="_blank">Ver Cardápio</a>
+						<h5 >Plataforma de Streaming</h5>
+						<p style="font-weight: bold;">Java, Spring Boot, Angular 16, PortgreSQL, AWS</p>
+						<p>Esse é um projeto pessoal que estou desenvolvendo baseado nos meus apredizados, plataforma de filmes e séries, com 
+							cadastros de usuário, Pagamentos recorrente, API.
+						</p>
+							<a href="https://github.com/Brunobiu/Clone_Flix" class="botao-repositori" target="_blank">Repositório</a>
 					</div>
 				</div>
-	
+
 				<div class="row">
+					<div class="dish1">
+						<h3>Curso</h3>
+					</div>
 					<img src="img/projeto-angular.png">
 					<div class="layer">
 						<h5 >Spring Boot API Rest e Angular 16</h5>
@@ -168,7 +172,43 @@
 					</div>
 				</div>
 
+
+	
 				<div class="row">
+					<div class="dish1">
+						<h3>Curso</h3>
+					</div>
+					<img src="img/projeto-java-web.png">
+					<div class="layer">
+						<h5>Formação Java Web</h5>
+						<p style="font-weight: bold;">JAVA, PostgreSQL, JSON, HTML, CSS</p>
+						<p>Servlets, Correção de Bugs, Orientação a Objetos, Manipulação de Dados, 
+							Cadastro de Usuários, Upload de Imagem do Usuário, Calendário de Nascimento, Impressão de PDF e Excel.</p>
+							<a href="https://youtu.be/gCsluc5E9bA" class="botao-youtube" target="_blank">YouTube</a>
+							<a href="https://github.com/Brunobiu/Forma-o-Java-Web-Full-Stack" class="botao-repositori" target="_blank">Repositório</a>
+
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="dish2">
+						<h3>Pessoal</h3>
+					</div>
+					<img src="img/projeto-cardapio.png">
+					<div class="layer">
+						<h5>Cardápio Digital</h5>
+						<p style="font-weight: bold;">Html, CSS, JavaScript</p>
+						<p>Pedido online simplificado, Integração com a API do WhatsApp, Gerenciamento eficiente de pedidos, Personalização flexível, Feedback instantâneo</p>
+						<a href="https://delivery-master.vercel.app/" class="botao-site" target="_blank">Ver Cardápio</a>
+					</div>
+				</div>
+	
+				
+
+				<div class="row">
+					<div class="dish2">
+						<h3>Pessoal</h3>
+					</div>
 					<img src="img/projeto-lojinha.png">
 					<div class="layer">
 						<h5>Lojinha Virtual</h5>
@@ -180,16 +220,22 @@
 				</div>
 
 				<div class="row">
+					<div class="dish1">
+						<h3>Curso</h3>
+					</div>
 					<img src="img/netflixclone.png">
 					<div class="layer">
 						<h5>Clone Netflix</h5>
 						<p style="font-weight: bold;">HTML, CSS</p>
-						<p>Projeto simples, imatação do NetFlix.</p>
+						<p>Projeto simples, imitação do NetFlix.</p>
 						<a href="https://netflix-clone-ivory-six-18.vercel.app/" class="botao-site" target="_blank">Ver Projeto</a>
 					</div>
 				</div>
 
 				<div class="row">
+					<div class="dish2">
+						<h3>Pessoal</h3>
+					</div>
 					<img src="img/sistemasteck.png">
 					<div class="layer">
 						<h5>Teck Sistemas</h5>
@@ -200,6 +246,9 @@
 				</div>
 
 				<div class="row">
+					<div class="dish1">
+						<h3>Curso</h3>
+					</div>
 					<img src="img/relogiodigital.png">
 					<div class="layer">
 						<h5>Relógio Digital</h5>
@@ -247,6 +296,25 @@
 		<div class="scrollup" id="scrollup">
 			<a href="#"><i class="fa fa-chevron-up"></i></a>
 		</div>
+
+
+		<!-- Video Modal Start -->
+		<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>        
+						<!-- 16:9 aspect ratio -->
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Video Modal End -->
 		
 
 		
@@ -283,6 +351,41 @@
 }
 
 	</script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var btn = document.querySelector(".btn-play");
+			var videoModal = document.getElementById("videoModal");
+			var video = document.getElementById("video");
+	
+			btn.addEventListener("click", function() {
+				var src = this.getAttribute("data-src");
+				video.setAttribute("src", src);
+				videoModal.classList.add("show");
+				videoModal.style.display = "block";
+				document.body.classList.add("modal-open");
+			});
+	
+			videoModal.addEventListener("click", function(event) {
+				if (event.target === videoModal) {
+					video.setAttribute("src", "");
+					videoModal.classList.remove("show");
+					videoModal.style.display = "none";
+					document.body.classList.remove("modal-open");
+				}
+			});
+	
+			var closeModalBtn = document.querySelector("#videoModal .close");
+			closeModalBtn.addEventListener("click", function() {
+				video.setAttribute("src", "");
+				videoModal.classList.remove("show");
+				videoModal.style.display = "none";
+				document.body.classList.remove("modal-open");
+			});
+		});
+	</script>
+	
+	
 
 	
 </body>
