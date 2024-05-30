@@ -85,7 +85,7 @@ section {
     right: 20px; /* Ajuste conforme necessário */
     width: 40px; /* Ajuste conforme necessário */
     height: 40px; /* Ajuste conforme necessário */
-    background-color: #ccc; /* Cor zinza */
+    background-color: var(--main-color); /* Cor zinza */
     border-radius: 5px; /* Bordas arredondadas */
     text-align: center;
     line-height: 40px;
@@ -100,5 +100,6 @@ section {
 .scrollup:hover {
     background-color: #999; /* Cor zinza escuro quando hover */
 }
+
 
 

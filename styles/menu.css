@@ -114,19 +114,23 @@
 @media screen and (max-width: 720px) {
     .dish {
         width: 100%;
-        padding: 45px
+        padding: 35px
+        
+        
     }
     .dish h3 {
         font-size: 10px; /* Ajuste conforme necessário */
+        
     }
 
 
     .carousel-track {
         display: flex;
         width: calc(200% + 40px); /* Duplica a largura total do conteúdo + espaço entre os itens */
-        animation: scroll 3s linear infinite;
+        animation: scroll 6s linear infinite;
         position: relative; /* Adiciona posição relativa para o track */
     }
+    
     
 
     
