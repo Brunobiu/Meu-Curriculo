@@ -28,6 +28,7 @@
 #cta_buttons {
     display: flex;
     gap: 24px;
+    font-size: 12px;
 }
 
 #cta_buttons a {
