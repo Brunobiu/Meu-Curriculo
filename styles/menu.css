@@ -29,6 +29,40 @@
 
 
 
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px; /* Diminuído para um tamanho menor */
+    font-size: 14px; /* Diminuído para um tamanho menor */
+    border: none;
+    background-color: #6c757d; /* Cor cinza */
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    width: auto; /* Ajusta o botão ao conteúdo */
+    max-width: 200px; /* Define uma largura máxima para o botão */
+    margin-left: auto; /* Empurra o botão para o lado direito */
+  }
+  
+  .icon-img {
+    width: 40px; /* Diminuído o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 5px; /* Espaço entre a imagem e a linha divisória */
+  }
+  
+  .btn:hover {
+    background-color: #5a6268; /* Cor cinza escuro ao passar o mouse */
+    color: #ffffff; /* Cor do texto mais branca ao passar o mouse */
+  }
+  
+  
+  
+  
+
+
+
+
 .carousel-container {
     overflow: hidden;
     white-space: nowrap;
